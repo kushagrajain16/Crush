@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to bottom, rgb(255, 214, 107), rgb(255, 150, 113));
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .header_text {
+      font-family: "Nunito";
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .gif_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    .btn {
+      background-color: #ff964d;
+      color: white;
+      font-weight: 600;
+      padding: 15px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 20px 2px;
+      cursor: pointer;
+      border: none;
+      border-radius: 12px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:hover {
+      background-color: #ffffff;
+      color: #ff964d;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <h1 class="header_text">Yeeyy! Finally</h1>
+    </div>
+    <div class="gif_container">
+      <img
+        src="https://i.postimg.cc/wTDG30TB/yes.gif"
+        alt="Cute animated illustration"
+      />
+    </div>
+    <button class="btn" id="yesButton" onclick="nextPage()">
+      Let's Fix a Date
+    </button>
+  </div>
+</body>
+</html>

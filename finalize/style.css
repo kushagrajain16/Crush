@@ -1,8 +1,8 @@
 body {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0;
   background: linear-gradient(to bottom, rgb(255, 214, 107), rgb(255, 150, 113));
 }
@@ -11,7 +11,6 @@ body {
   max-width: 600px;
   width: 90%;
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .header_text {
@@ -74,46 +73,17 @@ body {
   transform: scale(1.05);
 }
 
+.cute_button_container {
+  margin-top: 4vh;
+}
+
 footer {
-  background-color: #ff964d;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-footer p {
-  margin: 0;
-  font-family: "Nunito";
-  font-size: 16px;
-  font-weight: bold;
-}
-
-/* Responsive styles for larger screens */
-@media (min-width: 769px) {
-  .container {
-    max-width: 100%;
-  }
-
-  .header_text {
-    font-size: 2rem;
-  }
-
-  .form_label {
-    font-size: 1rem;
-  }
-
-  .form_input {
-    font-size: 0.875rem;
-  }
-
-  .btn {
-    font-size: 1rem;
-  }
-
-  footer p {
-    font-size: 0.875rem;
-  }
+    background-color: #854213;
+    color: white;
+    text-align: center;
+    
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    height: 6vh;
 }

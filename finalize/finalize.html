@@ -5,11 +5,17 @@
   <!-- Flatpickr styles and scripts -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <!-- Google Places Autocomplete API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places"></script>
 </head>
 <body>
   <div class="container">
     <div>
       <h1 class="header_text">Finalize the Date</h1>
+    </div>
+
+    <div class="calendar_block" id="calendar">
+      <!-- Your calendar content goes here -->
     </div>
 
     <div class="form_container">
@@ -18,7 +24,8 @@
         <input type="text" id="cafeName" name="cafeName" class="form_input" placeholder="Enter the name of the cafe" required>
 
         <label class="form_label" for="location">Location:</label>
-        <input type="text" id="location" name="location" class="form_input" placeholder="Enter the location" required>
+        <!-- Add a location search input -->
+        <input type="text" id="location" name="location" class="form_input" placeholder="Search for a location" required>
 
         <!-- Add Flatpickr date input -->
         <label class="form_label" for="date">Select Date and Time:</label>
@@ -35,6 +42,11 @@
       </form>
     </div>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made in love by Kushagra Jain</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>

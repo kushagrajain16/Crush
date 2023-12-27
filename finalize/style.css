@@ -91,25 +91,29 @@ footer p {
   font-weight: bold;
 }
 
-/* Responsive styles for smaller screens */
-@media (max-width: 768px) {
+/* Responsive styles for larger screens */
+@media (min-width: 769px) {
+  .container {
+    max-width: 100%;
+  }
+
   .header_text {
-    font-size: 6vw;
+    font-size: 2rem;
   }
 
   .form_label {
-    font-size: 3vw;
+    font-size: 1rem;
   }
 
   .form_input {
-    font-size: 2vw;
+    font-size: 0.875rem;
   }
 
   .btn {
-    font-size: 3vw;
+    font-size: 1rem;
   }
 
   footer p {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }

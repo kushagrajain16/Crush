@@ -8,20 +8,23 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      margin: 0;
       background: linear-gradient(to bottom, rgb(255, 214, 107), rgb(255, 150, 113));
     }
 
     .container {
+      max-width: 600px;
+      width: 90%;
       text-align: center;
     }
 
     .header_text {
       font-family: "Nunito";
-      font-size: 50px;
+      font-size: 4vw;
       font-weight: bold;
       text-align: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: 4vh;
+      margin-bottom: 4vh;
       color: #ffffff;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
@@ -32,18 +35,23 @@
       align-items: center;
       border-radius: 50%;
       overflow: hidden;
-      margin-top: 20px;
+      margin-top: 4vh;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
     }
 
     .btn {
       background-color: #ff964d;
       color: white;
       font-weight: 600;
-      padding: 15px 32px;
+      padding: 3vh 10vw;
       text-align: center;
       display: inline-block;
-      font-size: 16px;
-      margin: 20px 2px;
+      font-size: 2vw;
+      margin: 4vh 0;
       cursor: pointer;
       border: none;
       border-radius: 12px;
@@ -55,6 +63,13 @@
       background-color: #ffffff;
       color: #ff964d;
       transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .btn {
+        padding: 3vh 5vw;
+        font-size: 3vw;
+      }
     }
   </style>
 </head>
@@ -73,5 +88,11 @@
       Let's Fix a Date
     </button>
   </div>
+
+  <script>
+    function nextPage() {
+      window.location.href = "yes.html";
+    }
+  </script>
 </body>
 </html>

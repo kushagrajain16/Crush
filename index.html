@@ -8,63 +8,61 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      margin: 0;
       background: linear-gradient(to bottom, rgb(0, 249, 236), rgb(71, 150, 229));
     }
 
     #noButton {
       position: absolute;
-      margin-left: 10%;
+      margin-left: 150px;
       transition: 0.5s;
       margin-top: 30px;
     }
 
     #yesButton {
       position: absolute;
-      margin-right: 10%;
+      margin-right: 150px;
       margin-top: 30px;
-    }
-
-    .container {
-      max-width: 600px;
-      width: 90%;
-      text-align: center;
     }
 
     .header_text, .text {
       font-family: "Nunito";
-      font-size: 4vw;
+      font-size: 50px;
       font-weight: bold;
       text-align: center;
-      margin-top: 4vh;
-      margin-bottom: 4vh;
+      margin-top: 20px;
+      margin-bottom: 20px;
       color: #ffffff;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
 
     .text {
-      font-size: 2vw;
-      margin-top: 2vh;
-      margin-bottom: 0;
+      font-family: "Nunito";
+      font-size: 25px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 0px;
     }
 
     .buttons {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
-      margin-top: 4vh;
+      margin-top: 20px;
+      margin-left: 20px;
     }
 
     .btn {
       background-color: #017cff;
       color: white;
       font-weight: 600;
-      padding: 3vh 10vw;
+      padding: 15px 32px;
       text-align: center;
       display: inline-block;
-      font-size: 2vw;
-      margin: 2vh 0;
+      font-size: 16px;
+      margin: 4px 2px;
       cursor: pointer;
       border: none;
       border-radius: 12px;
@@ -84,23 +82,10 @@
       align-items: center;
       border-radius: 50%;
       overflow: hidden;
-      margin-top: 4vh;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
     }
 
     p {
       display: none;
-    }
-
-    @media (max-width: 768px) {
-      .btn {
-        padding: 3vh 5vw;
-        font-size: 3vw;
-      }
     }
   </style>
 </head>

@@ -1,6 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-height: 100vh;
   margin: 0;
   background: linear-gradient(to bottom, rgb(255, 214, 107), rgb(255, 150, 113));
@@ -10,7 +11,7 @@ body {
   max-width: 600px;
   width: 90%;
   text-align: center;
-  margin-bottom: 50px; /* Added space for the footer */
+  margin-bottom: 50px;
 }
 
 .header_text {
@@ -88,4 +89,27 @@ footer p {
   font-family: "Nunito";
   font-size: 16px;
   font-weight: bold;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .header_text {
+    font-size: 6vw;
+  }
+
+  .form_label {
+    font-size: 3vw;
+  }
+
+  .form_input {
+    font-size: 2vw;
+  }
+
+  .btn {
+    font-size: 3vw;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
 }

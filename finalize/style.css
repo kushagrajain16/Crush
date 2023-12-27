@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, rgb(255, 214, 107), rgb(255, 150, 113));
+  }
+  
+  .container {
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+  }
+  
+  .header_text {
+    font-family: "Nunito";
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .calendar_block {
+    margin-top: 4vh;
+  }
+  
+  .form_container {
+    margin-top: 4vh;
+  }
+  
+  .form_label {
+    font-family: "Nunito";
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 1vh;
+    color: #ffffff;
+  }
+  
+  .form_input {
+    width: 100%;
+    padding: 1vh;
+    margin-bottom: 2vh;
+    font-size: 1.5vw;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .btn {
+    background-color: #ff964d;
+    color: white;
+    font-weight: 600;
+    padding: 3vh 10vw;
+    text-align: center;
+    display: inline-block;
+    font-size: 2vw;
+    margin: 4vh auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    display: block;
+  }
+  
+  .btn:hover {
+    background-color: #ffffff;
+    color: #ff964d;
+    transform: scale(1.05);
+  }
+  
+  .cute_button_container {
+    margin-top: 4vh;
+  }
+  

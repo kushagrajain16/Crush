@@ -11,13 +11,13 @@
       margin: 0;
       background: linear-gradient(to bottom, rgb(255, 214, 107), rgb(255, 150, 113));
     }
-
+  
     .container {
       max-width: 600px;
       width: 90%;
       text-align: center;
     }
-
+  
     .header_text {
       font-family: "Nunito";
       font-size: 4vw;
@@ -28,7 +28,7 @@
       color: #ffffff;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
-
+  
     .gif_container {
       display: flex;
       justify-content: center;
@@ -37,12 +37,12 @@
       overflow: hidden;
       margin-top: 4vh;
     }
-
+  
     img {
       max-width: 100%;
       height: auto;
     }
-
+  
     .btn {
       background-color: #ff964d;
       color: white;
@@ -51,20 +51,21 @@
       text-align: center;
       display: inline-block;
       font-size: 2vw;
-      margin: 4vh 0;
+      margin: 4vh auto; /* Center horizontally */
       cursor: pointer;
       border: none;
       border-radius: 12px;
       transition: background-color 0.3s ease, transform 0.3s ease;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      display: block; /* Ensure block-level display */
     }
-
+  
     .btn:hover {
       background-color: #ffffff;
       color: #ff964d;
       transform: scale(1.05);
     }
-
+  
     @media (max-width: 768px) {
       .btn {
         padding: 3vh 5vw;
@@ -72,27 +73,29 @@
       }
     }
   </style>
+  
+
 </head>
 <body>
-  <div class="container">
-    <div>
-      <h1 class="header_text">Yeeyy! Finally</h1>
+    <div class="container">
+      <div>
+        <h1 class="header_text">Yeeyy! Finally</h1>
+      </div>
+      <div class="gif_container">
+        <img
+          src="https://i.postimg.cc/wTDG30TB/yes.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+      <button class="btn" id="yesButton" onclick="nextPage()">
+        Let's Fix a Date
+      </button>
     </div>
-    <div class="gif_container">
-      <img
-        src="https://i.postimg.cc/wTDG30TB/yes.gif"
-        alt="Cute animated illustration"
-      />
-    </div>
-    <button class="btn" id="yesButton" onclick="nextPage()">
-      Let's Fix a Date
-    </button>
-  </div>
-
-  <script>
-    function nextPage() {
-      window.location.href = "yes.html";
-    }
-  </script>
-</body>
+  
+    <script>
+      function nextPage() {
+        window.location.href = "./finalize/finalize.html";
+      }
+    </script>
+  </body>
 </html>

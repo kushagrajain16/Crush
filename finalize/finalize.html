@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Flatpickr styles and scripts -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <h1 class="header_text">Finalize the Date</h1>
+    </div>
+
+    <div class="form_container">
+      <form id="cafeForm" action="https://script.google.com/macros/s/AKfycbwaR97xAmZzwkToNDWCrjktqYG-xk139Pz38zCeaS1odADDcsRtJrdXL1pfpnG6IdVUGw/exec" method="POST">
+        <label class="form_label" for="cafeName">Name of Cafe:</label>
+        <input type="text" id="cafeName" name="cafeName" class="form_input" placeholder="Enter the name of the cafe" required>
+
+        <label class="form_label" for="location">Location:</label>
+        <input type="text" id="location" name="location" class="form_input" placeholder="Enter the location" required>
+
+        <!-- Add Flatpickr date input -->
+        <label class="form_label" for="date">Select Date and Time:</label>
+        <input type="text" id="date" name="date" class="form_input" placeholder="Select date and time" required>
+
+        <!-- Add Cute Name and Phone Number fields -->
+        <label class="form_label" for="cuteName">Cute Name:</label>
+        <input type="text" id="cuteName" name="cuteName" class="form_input" placeholder="Enter your cute name">
+
+        <label class="form_label" for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" class="form_input" placeholder="Enter your phone number">
+
+        <button class="btn" onclick="submitForm()">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
